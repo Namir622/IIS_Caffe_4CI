@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link{
+    padding: 15px 20px;
+    background-color: red;
+    text-decoration: underline dotted;
+}
+
+a{
+    text-decoration: underline dotted;
+    color: yellow;
+}
+
+.link:hover{
+    background-color: yellow;
+}
+
+a:hover{
+    text-decoration: underline double;
+    color: red;
+}
+
+p{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+div {
+    margin-top: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+}
+
+.introduzione{
+    margin-top: 20%;
+}

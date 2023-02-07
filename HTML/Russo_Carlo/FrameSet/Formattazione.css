@@ -1,0 +1,22 @@
+
+body{
+    background-color: bisque;
+}
+
+h1{
+    color: red;
+    text-decoration:underline
+}
+
+h2{
+    color:brown ;
+}
+
+h3{
+    color: crimson;
+    font-family: cursive;
+}
+
+p{
+    font-size: 100%;
+}

@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>	fork_Join</title>
+		<link rel="stylesheet" href="Formattazione.css">
+	</head>
+<body>
+	<h1>Concetti fork/Join
+		<a href="https://en.wikipedia.org/wiki/Fork-join_model" target="_self">
+			<img src="Immagini/wikiLogo" alt="Logo wikipedia" style="width:42px;height:42px;">
+		</a>
+	</h1>
+
+	<p>
+	Le chiamate di sistema la creaziome dinamica di processi per quanto riguarda lo spazio degli indirizzi e, in generale, per i diritti d'acceso del nuovo proceso alle varie 
+	risorse del sistema. Il loro uso dipende dalla tipologia Sistema Operativo da realizzare.<br>
+
+	Un <em>processo padre</em> un processo che ha creato uno o piu processi figli; può creare molti processi figli ma può avere solo un processo padre.<br>
+	 
+	Quando l'esecuzione di un processo incontra un punto in cui può essere eseguito un altro 
+	processo in maniera parallela. il SO esegue la primitiva <em>fork</em> e genera un <em>"figlio"</em> 
+	che avanzerà indipendentemente dal padre. Il padre controlla il completamento del figlio con la primitiva <em>join</em> 
+
+	Nel caso piu semplice. il processo figlio condivide le risorse che possiede il processo padre.<br>
+
+	per eseguire una fork il nucleo preleva, dai parametri associati alla chiamata, le informazioni necessarie (per esempio il nome del nuovo processo e l'indirizzodella prima istruzione da eseguire) e crea un nuovo processo che pone nello stato di pronto.<br>
+	Esistono altre chiamate di sistema come la elimina processo (kill). che consente di eliminare processi esistenti.
+	</p>
+
+	<img src="Immagini/fork_join.png" alt="fork e join esempio">
+	
+	<p>Il processo padre continua la sua esecuzione fino a quando incontra la primitiva join attraverso la quale verifica la conclusione del processo figlio</p>
+
+
+	</body>
+</html>

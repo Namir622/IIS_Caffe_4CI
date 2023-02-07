@@ -1,0 +1,25 @@
+body {
+    background-color: green;
+    background-image: url("gattini.jpeg");
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #f00;
+    
+}
+
+h2 {
+    color: rgb(255, 94, 0);
+    
+}
+
+h3 {
+    color: rgb(0, 0, 0);
+   
+}
+
+h4 {
+    color: #f00;
+    
+}

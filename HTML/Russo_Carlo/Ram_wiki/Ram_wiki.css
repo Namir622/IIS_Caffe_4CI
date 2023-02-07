@@ -1,0 +1,21 @@
+body {
+    background-color: blueviolet;
+    background-image: url("gattino.jpeg");
+    background-attachment: fixed;
+}
+
+h1 {
+    color: rgb(255, 0, 200);
+    background-color: aqua;
+}
+
+h2 {
+    font-family: cursive;
+    color: rgb(255, 0, 0);
+    background-color: aqua;
+}
+
+h3 {
+    color: black;
+    background-color: aqua;
+}

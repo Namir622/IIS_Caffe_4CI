@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Semafori</title>
+    </head>
+
+    <style>
+        body{
+            background-color: rgb(11, 11, 74);
+        }
+
+        .testo{
+            color: white;
+            width: 50%;
+            text-align: center;
+        }
+
+        .titolo{
+            font-size: larger;
+            color: red;
+            text-align: center;
+        }
+
+        .container {
+        display: flex;
+        justify-content: center;
+        height: 30%; /* l'altezza deve essere specificata perché il div si allinei al centro della pagina */
+        margin-bottom: 5%;
+        }
+
+    </style>
+
+
+
+    <body>
+        
+            <div class="titolo"><h1>I semafori</h1></div>
+
+            <div class="container">
+                <p class="testo">Come descritto, i semafori sono un meccanismo di sincronizzazione utilizzato per coordinare l'accesso alle risorse condivise tra i processi. La primitiva wait decrementa il contatore del semaforo e se il valore diventa minore di zero, il processo che ha eseguito la wait è messo in attesa sulla coda associata al semaforo. La primitiva signal invece incrementa il contatore del semaforo e se ci sono processi in attesa sulla coda, uno di essi viene sbloccato e riprende la sua esecuzione.</p>
+            </div>
+
+            <div class="container">
+                <p class="testo">In pratica, i semafori vengono utilizzati per implementare un meccanismo di mutua esclusione per proteggere una risorsa condivisa da più processi, in modo che solo un processo alla volta possa accedere alla risorsa. La sincronizzazione tra processi avviene tramite l'uso delle primitive wait e signal per gestire l'accesso alle risorse.            </p>
+            </div>
+
+            <div class="container">
+                <p class="testo">Inoltre, i semafori sono utilizzati per implementare diverse tecniche di sincronizzazione tra processi come la sincronizzazione dei processi, la gestione delle code, l'algoritmo di Peterson, etc.</p>
+            </div>
+
+            <div class="container">
+                <p class="testo">Il modello di semafori fornisce anche una soluzione per il problema di deadlock, in quanto limitando l'accesso alle risorse in modo controllato, evitiamo situazioni di deadlock.</p>
+            </div>
+
+            <div class="container">
+                <p class="testo">In sintesi, i semafori sono uno strumento molto potente per la sincronizzazione dei processi, che consente di gestire l'accesso alle risorse condivise in modo sicuro e controllato, evitando race condition e deadlock, assicurando una corretta gestione delle risorse e una perfetta collaborazione tra processi.</p>
+            </div>
+               
+        
+
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Gestione della memoria</title>
+        <link rel="stylesheet" href="Formattazione.css">
+    </head>
+
+    <body>
+        <h1>Gestione della memoria in pagine e blocchi
+            <a href="https://it.wikipedia.org/wiki/Gestore_della_memoria" target="_self">
+                <img src="Immagini/wikiLogo" alt="Logo wikipedia" style="width:42px;height:42px;">
+            </a>
+        </h1>
+        <h2>•La Paginazione</h2>
+        <p>
+            Con la paginazione si risolve quindi il problema della frammentazione:<br>
+            la memoria centrale è suddivisa in blocchi aventi tutti la stessa dimensione e lo spazio degli indirizzi di un programma è suddiviso logicamente in parti chiamate pagine.<br>
+            Con questa tecnica si cerca di distinguere la contiguità degli indirizzi propri dello spazio logico creato dal linker, 
+            dall'allocazione in memoria fisica; quindi lo spazio degli indirizzi fisici, nel caso della paginazione, 
+            non sarà più contiguo come per gli indirizzi virtuali generati dal linker.
+        </p>
+            
+        <h2>•I Blocchi</h2>
+        <p>
+            I blocchi hanno la stessa dimensione delle pagine (in genere multipli di 2k) e l'allocazione del programma avviene quando in memoria centrale esiste un numero di blocchi liberi pari o superiori al numero di pagine da allocare.<br>
+            Mentre le pagine sono logicamente contigue, i blocchi di memoria centrale in cui verranno caricate possono non esserlo. <br>
+            Per esempio se un programma è costituito da 4 pagine, al momento della sua allocazione il gestore della memoria dovrà trovare 4 blocchi (anche sparsi) liberi. <br>
+            Per poter fare questo il Sistema Operativo deve gestire delle tabelle di abbinamento fra pagine e blocchi: la tabella delle pagine e la tabella dei blocchi.<br>
+            Per poter assegnare i blocchi alle pagine è necessario trasformare gli indirizzi relativi delle variabili e delle istruzioni contenuti nelle pagine in indirizzi assoluti, in funzione dell'indirizzo di caricamento del blocco.<br>
+            Questo metodo è evidentemente basato sulla rilocazione dinamica dato che l'operazione di traduzione viene effettuata a runtime.<br>
+            Inoltre questa tecnica elimina completamente il fenomeno della frammentazione dato che le pagine fisiche non necessitano di contiguità e loro stesse sono strutturate in frammen-tazione.<br>
+            Rimane però un concetto di frammentazione più sottile; se in un certo istante il SO possiede quattro pagine fisiche libere e il prossimo processo da caricare ne richiede necessariamente cinque o di più, il processo non verrà caricato e quelle quattro pagine saranno considerate memoria frammentata.<br>
+            Anche in questo caso il nuovo processo potrebbe essere caricato parzialmente, ma in questo modo esso potrà produrre effetti collaterali indesiderabili all'intero Sistema Operativo (trashing); in alternativa si potrà decidere per la paginazione su domanda.<br>
+            Quindi la tecnica della paginazione pura è un sistema di gestione della memoria basato su rilocazione dinamica e allocazione statica.<br>
+        </p>
+    </body>
+
+
+</html>

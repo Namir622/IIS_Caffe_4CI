@@ -1,0 +1,95 @@
+<html>
+
+<head>
+	<title> Programmazione concorrente</title>
+	<link rel="stylesheet" href="Formattazione.css">
+</head>
+
+<body>
+	<h1>Concetti fondamentali</h1>
+
+	<p>Illustriamo il supporto usato dal Sistema Operativo nel realizzare programmi concorrenti,programmi in grado di
+		sfruttare nel mcxio più efficiente possibile le diverse risorse presenti nel sistema.</p>
+
+	<p>Il termine programmazione concorrente indica linsieme di tecniche e strumenti impiegati descrivere il
+		comportamento di più attività o processi che si intende far eseguire contemporaneamente in un sistema di
+		calcolo.</p>
+
+	<p>A tale ricordiamo alcuni concetti fondamentali:</p>
+
+	
+	<dl>
+		<dt><strong>Programma:</strong> </dt>
+		<dd>Un Insieme statico di istruzioni, unentità passiva, che descrive le azioni da compiere.</dd>
+	
+		<dt><strong>Processo:</strong></dt> 
+		<dd>È un'entità attiva che rappresenta l'esecuzione delle azioni slxcificate dal programma; un processo in esecuzione avanza il proprio stato.</dd>
+			 
+		<dt><strong>Processore:</strong></dt> 
+		<dd>È un che consente l'evoluzione e il completamento di un processo (la CPU). ln multiprogrammazione ogni utente ha l'impressione di lavorare con un suo processore virtuale.</dd>
+			
+		<dt><strong>Thread:</strong></dt> 
+		<dd>È un segmento di istruzioni di un processo in esecuzione. Un processo è un insieme di thread che rappresentano il suo codice eseguibile. Un processo composto come minimo da un thread. ma normalmente a ogni ne vengono associati piu di uno in base alle capacità di avanzamento concorrente di ciascuno.</dd>
+			 
+		<dt><strong>Risorse del sistema:</strong></dt> 
+		<dd>È un qualsiasi elemento hardware o software che viene usato da un processo e che ne condiziona la creazione o lavanzamento.</dd>
+	</dl>
+		 
+	<p>
+	Possiamo vedere come tutti questi elementi siano dipendenti tra di loro, infatti un processo è un programma in esecuzione e, a un solo programma, si possono associare più processi.<br>
+
+	Inoltre un processo per poter avanzare necessita di risorse, sia hardware sia software, in particolare del processore.<br>
+
+	ln relazione alla programmazione concorrente è importante evidenziare le caratteristiche delle risorse.
+	</p>
+
+	<h2>Esse possono essere:</h2>
+
+	<h3>• Prerilasciabili</h3>
+	<p>
+	— si possono sottrarre al processo che le sta usando prima che esso le abbia rilasciate e senza causare il fallimento della sua esecuzione;<br> 
+	— il loro stato non si nuxlifica durante rutilizzo e può essere salvato e successivamente ripristinato (per esemplo: memoria virtuale, processore virtuale).
+	</p> 
+
+	<h3>• Non prerilasciabili </h3>
+	<p>
+	— non si possono sottarre al processo che le sta usando causarne il fallimento:<br>
+	— il loro stato non può essere salvato e ripristinato (per esempio: stampante, masterizzatore, sezioni critiche).
+	</p> 
+
+	<h2>Il Sistema Operativo (SO) deve prevedere un gestore della risorsa: </h2> 
+	<h3>
+	• un gestore della risora:<br>
+	• un protocollo di accesso alla risorsa: 
+	</h3>
+	<p>
+	— richiesta e ottenimento della risorsa;<br>
+	— utilizzo della risorsa;<br>
+	— rilascio della risorsa
+	</p>
+
+	<p>
+	I programmi si possono classificare in sequenziali e concorrenti: nel primo caso. l'esecuzione di un programma dà luogo a un singolo processo, 
+	infatti svolge una sola istruzione alla volta sulla di un programma sequenziale; nel secondo dà luogo a più processi
+	che competono tra loro per l'uso delle risorse del sistema, infatti vengono eseguite più istruzioni contemporaneamente.<br>
+
+	Da un punto di vista funzionale non vi è differenza tra i due tipi di programmazione: tutto 
+	ciò che può essere realizzato da un <em>programma concorrente</em> può anche essere realizzato da 
+	un programma sequenziale. Dal punto di Vista della produttività, invece, i programmi 
+	correnti sono, solitamente, piu efficienti di quelli sequenziali, specialmente su macchine 
+	dotate di più processori.<br>
+
+	Oltre a originare più processi. i programmi concorrenti devono fare in modo che i vari 
+	si sincronizzino tra loro in modo corretto. <br>
+	</p>
+
+	<h2>Abbiamo quindi una serie di buone motivazioni per effettuare una programmazione corrente:</h2>
+	<h3>
+	• migliorare la comprensione di un SO che gestire più attività parallele; <br>
+	• sfruttare le prestazioni ottenibili da architetture multi-processor; <br>
+	• migliorare la gestione di applicazioni come: server, robotica, giochi e simulazioni diattività concorrenti. 
+	</h3>
+	
+</body>
+
+</html>

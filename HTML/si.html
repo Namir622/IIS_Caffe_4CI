@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Style the dropdown menu */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      /* Style the frames */  
+      .frame {
+        width: 100px;
+        height: 80%;
+        border: 1px solid black;
+        float:left;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Create the dropdown menu -->
+    <div class="dropdown">
+      <a href="#">Menu</a>
+      <div class="dropdown-content">
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+      </div>
+    </div>
+    <!-- Create the frames -->
+    <div class="frame">
+      <p>This is a paragraph</p>
+    </div>
+    <div class="frame">
+      <p>this is also a paragraph</p>
+    </div>
+    <div class="frame">
+      <p style="color: blue;">and this is blue</p>
+    </div>
+  </body>
+</html>

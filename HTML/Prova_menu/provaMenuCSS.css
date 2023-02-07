@@ -1,0 +1,14 @@
+/* Impostiamo i seguenti stili per il nostro menu */
+#menu {
+  background-color: #333;
+  color: #fff;
+  width: 200px;
+  padding: 10px;
+}
+
+/* Impostiamo i seguenti stili per il nostro pulsante */
+#toggleButton {
+  background-color: #555;
+  color: #fff;
+  padding: 5px 10px;
+}

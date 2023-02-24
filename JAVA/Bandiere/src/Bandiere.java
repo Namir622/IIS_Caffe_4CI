@@ -18,6 +18,7 @@ public class Bandiere extends JPanel{
         g.setColor(Color.red);
         g.fillRect(150, 10, 75, 150);
 
+
         
     }
 

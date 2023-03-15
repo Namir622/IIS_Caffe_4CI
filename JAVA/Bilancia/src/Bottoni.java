@@ -1,8 +1,10 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.*;
 
 
-public class Bottoni extends JPanel{
+
+public class Bottoni extends JPanel implements ActionListener{
 
     public static Object[] buttons;
 
@@ -31,11 +33,26 @@ public class Bottoni extends JPanel{
 
         }//for
         
-        /*for (JButton button : buttons) {
-            
-            
-        }//for*/
+        for(int i = 0; i < 15; i++) {
 
-        //this.add(new JButton(nomi[i]));
+            buttons[i].setBackground(Color.DARK_GRAY);
+            buttons[i].setForeground(Color.white);
+            buttons[i].setFocusable(false);
+            
+        }//for
+
+        
+        for (int i = 0; i < 15; i++) {
+            buttons[i].addActionListener(this);
+        }
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        
+
+
+
+        
     }
 }

@@ -1,8 +1,6 @@
-import javax.swing.JButton;
 import javax.swing.JFrame;
-import java.awt.event.*;
 
-public class Frame extends JFrame implements ActionListener{
+public class Frame extends JFrame {
     Frame(){
         //impopstiamo le dimensioni
         this.setBounds(500, 300, 500, 600);
@@ -24,17 +22,6 @@ public class Frame extends JFrame implements ActionListener{
     public static void main(String[] args) {
         new Frame();
 
-        
-    }
+    }//main
 
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-
-
-
-
-
-
-   }
-}
+}//class

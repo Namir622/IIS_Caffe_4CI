@@ -1,27 +1,28 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.*;
 
 public class Pannello extends JPanel implements ActionListener{
     Pannello(){
         this.setLayout(new GridLayout(4,4));
         this.setBackground(Color.yellow);
 
-        JButton Numero1 = new JButton();
-        JButton Numero2 = new JButton();
-        JButton Numero3 = new JButton();
-        JButton Numero4 = new JButton();
-        JButton Numero5 = new JButton();
-        JButton Numero6 = new JButton();
-        JButton Numero7 = new JButton();
-        JButton Numero8 = new JButton();
-        JButton Numero9 = new JButton();
-        JButton Numero0 = new JButton();
-        JButton OperazioneMoltiplicazione = new JButton();
-        JButton OperazioneDivisone = new JButton();
-        JButton OperazioneSotrazzione = new JButton();
-        JButton OperazioneSomma = new JButton();
-        JButton OperazioneCancella = new JButton();
-        JButton OperazioneRisultato = new JButton();
+        JButton Numero1 = new JButton("1");
+        JButton Numero2 = new JButton("2");
+        JButton Numero3 = new JButton("3");
+        JButton Numero4 = new JButton("4");
+        JButton Numero5 = new JButton("5");
+        JButton Numero6 = new JButton("6");
+        JButton Numero7 = new JButton("7");
+        JButton Numero8 = new JButton("8");
+        JButton Numero9 = new JButton("9");
+        JButton Numero0 = new JButton("0");
+        JButton OperazioneMoltiplicazione = new JButton("X");
+        JButton OperazioneDivisone = new JButton("/");
+        JButton OperazioneSotrazzione = new JButton("-");
+        JButton OperazioneSomma = new JButton("+");
+        JButton OperazioneCancella = new JButton("Canc");
+        JButton OperazioneRisultato = new JButton("=");
 
         this.add(Numero1);
         this.add(Numero2);
@@ -41,5 +42,11 @@ public class Pannello extends JPanel implements ActionListener{
         this.add(Numero0);
 
 
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
     }
 }

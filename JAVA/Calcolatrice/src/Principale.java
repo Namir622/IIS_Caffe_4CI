@@ -1,5 +1,4 @@
 import javax.swing.*;
-import javax.swing.event.*;
 import java.awt.*;
 
 public class Principale {
@@ -13,12 +12,12 @@ public class Principale {
         //finestra.setLayout(new BorderLayout());
         
         Container c = finestra.getContentPane();
-        c.setLayout(new BorderLayout());
+        //c.setLayout(new BorderLayout());
         c.setBackground(Color.red);
         
-        Pannello panel = new Pannello();
+        Pannello coso = new Pannello();
 
-        c.add(panel, BorderLayout.CENTER);
+        c.add(coso, BorderLayout.CENTER);
 
     }
 }

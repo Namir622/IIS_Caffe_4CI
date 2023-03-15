@@ -1,4 +1,6 @@
 import javax.swing.*;
+import javax.swing.border.Border;
+
 import java.awt.*;
 import java.awt.event.*;
 
@@ -14,6 +16,7 @@ public class Bottoni extends JPanel implements ActionListener{
         this.setLayout(new GridLayout(5, 3));
 
         this.setBackground(Color.black);
+        
 
 
         String[] nomi = {"Pesca", "Mela", "Ananas", 
@@ -21,8 +24,6 @@ public class Bottoni extends JPanel implements ActionListener{
                          "Arancia", "Mandarino", "Banana",
                          "-------", "-------", "-------",
                          "Peso", "Aggiungi" ,"Cancella"};
-
-
 
         JButton[] buttons = new JButton[15];
 

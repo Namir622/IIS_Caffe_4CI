@@ -1,6 +1,6 @@
-import java.awt.Color;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
+import java.awt.*;
+import javax.swing.*;
+
 
 public class Panel_sud extends JPanel{
     JTextField peso;
@@ -8,6 +8,7 @@ public class Panel_sud extends JPanel{
 
     Panel_sud(){
         this.setBackground(Color.black);
+        this.setPreferredSize(new Dimension(500, 90));
         
     }//costruttore
     

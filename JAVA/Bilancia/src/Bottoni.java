@@ -17,7 +17,7 @@ public class Bottoni extends JPanel implements ActionListener{
         //stringa con i nomi dei bottoni
         String[] nomi = {"Pesca", "Mela", "Ananas", 
                          "Cocomero", "Kiwi", "Pera",
-                         "Arancini", "Mandarino", "Banana",
+                         "Arancini", "Durian", "Banana",
                          "-------", "-------", "-------",
                          "Peso", "Stampa" ,"Cancella"};
 
@@ -52,7 +52,7 @@ public class Bottoni extends JPanel implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         
         //i prezzi di tutti i prodotti
-        String[] prezzo_kilo = {"0", "1", "2", "3", "4", "5", "6", "7", "8"};
+        String[] prezzo_kilo = {"1.5", "0.57", "1.49", "2", "2.55", "2.99", "2.7", "40", "1.1"};
 
         for (int i = 0; i < 15; i++) {
 
@@ -92,7 +92,6 @@ public class Bottoni extends JPanel implements ActionListener{
                     JOptionPane.showMessageDialog(this,"NON è stato inserito il peso", "AAAAAAAAAAA!!!", JOptionPane.WARNING_MESSAGE); 
  
                 }//if
-
         }//else
 
         //uscita dal programma

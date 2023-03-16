@@ -1,4 +1,6 @@
 import javax.swing.*;
+import javax.swing.border.Border;
+
 import java.awt.*;
 import java.awt.event.*;
 
@@ -22,10 +24,9 @@ public class Bottoni extends JPanel implements ActionListener{
                          "Peso", "Stampa" ,"Cancella"};
 
 
-        //
-        buttons = new JButton[15];
 
-        //istanza di tutti i bottoni
+        JButton[] buttons = new JButton[15];
+
         for(int i = 0; i < 15; i++) {
 
             buttons[i] = new JButton(nomi[i]);

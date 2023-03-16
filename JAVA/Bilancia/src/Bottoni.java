@@ -1,6 +1,4 @@
 import javax.swing.*;
-import javax.swing.border.Border;
-
 import java.awt.*;
 import java.awt.event.*;
 
@@ -25,7 +23,7 @@ public class Bottoni extends JPanel implements ActionListener{
 
 
 
-        JButton[] buttons = new JButton[15];
+        buttons = new JButton[15];
 
         for(int i = 0; i < 15; i++) {
 

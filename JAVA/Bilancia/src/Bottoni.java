@@ -49,12 +49,11 @@ public class Bottoni extends JPanel implements ActionListener{
 
 
     @Override
-    public void actionPerformed(ActionEvent e) {
-        
+    public void actionPerformed(ActionEvent e) {        
         //i prezzi di tutti i prodotti
         String[] prezzo_kilo = {"1.5", "0.57", "1.49", "2", "2.55", "2.99", "2.7", "40", "1.1"};
 
-        for (int i = 0; i < 15; i++) {
+        for (int i = 0; i < 9; i++) {
 
             //funzionamento di ogni pulsante dei prodotti
             if (e.getSource() == buttons[i] && i < 9) {

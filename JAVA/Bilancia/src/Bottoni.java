@@ -70,7 +70,7 @@ public class Bottoni extends JPanel implements ActionListener{
 
             Panel_sud.peso.setEditable(true);
 
-        }//if
+        }//if 
 
         //stampa del prezzo 
         if (e.getSource() == buttons[13] && Panel_sud.peso.getText().length() != 0) {

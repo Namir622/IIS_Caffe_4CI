@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang = "it">
+<head>
+<meta charset="utf-8">
+<title>gestione onclick</title>
+<script type="text/javascript">
+	
+	function media3()
+	{
+		//script per il calcolo della media di tre numeri
+		var a,b,c, media
+		a=parseInt(prompt("Inserisci il primo numero"))
+		b=parseInt(prompt("Inserisci il secondo numero"))
+		c=parseInt(prompt("Inserisci il terzo numero"))
+		
+		media = (a+b+c)/3
+		
+		alert("la media dei tre numeri è" + media)
+	}
+	
+</script>
+<body>
+	<form>
+		<imput type="button" value="media" onclick="media3()">
+	</form>
+</body>
+</html>

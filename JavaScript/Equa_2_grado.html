@@ -15,22 +15,24 @@
 
     delta = (b*b)-4*a*c
 
-    if (delta<0) {
-        alert("Il delta è negativo")
-    } else {
-        ris1 = (-b+Math.sqrt(delta))/2
+    if (delta<0) alert("Il delta è negativo")
+    else if (delta == 0) { ris1 = (-b)/(2*a)
+                          alert("La soluzione è: " + ris1)
+        
+        } else { if (delta > 0) {
 
-        ris2 = (-b-Math.sqrt(delta))/2
+                ris1 = ((-b)+Math.sqrt(delta))/(2*a)
 
-        alert("Le soluzioni sono: " + ris1 + ris2)
-    }    
-    
+                ris2 = ((-b)-Math.sqrt(delta))/(2*a)
 
-
-    alert("Le soluzioni sono: " + ris1 + " // " + ris2)
+                alert("Le soluzioni sono: " + "X1: " + ris1 + " // X2: " + ris2)
+            
+                }//for
+            
+        }//for
 
     </script>
 
-<body>
-</body>
+    <body>
+    </body>
 </html>

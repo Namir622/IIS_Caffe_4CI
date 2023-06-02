@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alert sull'immagine</title>
+    <style>
+        /* Stile per l'immagine */
+        #myImage {
+            width: 200px;
+            height: 200px;
+            align-items: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Esercizio HTML</h1>
+
+    <img id="myImage" src="Immagine_JS.jpg" alt="Immagine" />
+
+    <script>
+        // Funzione che mostra l'alert
+        function showAlert() {
+            alert("Passaggio sopra l'immagine!");
+        }
+
+        // Aggiunge l'evento al passaggio del mouse sull'immagine
+        var image = document.getElementById('myImage');
+        image.addEventListener('mouseover', showAlert);
+    </script>
+</body>
+</html>

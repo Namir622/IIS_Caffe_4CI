@@ -1,0 +1,39 @@
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OfMouseOver</title>
+
+        <style>
+            /* Stile per l'immagine */
+            #myImage {
+                width: 200px;
+                height: 200px;
+                align-items: center;
+            }
+    
+            
+        </style>
+        
+    </head>
+
+    <body>
+
+        <p id="testo">Passa per avere più informazioni</p>
+
+        <img id="myImage" src="Immagine_JS.jpg" alt="Immagine" onmouseover="cambia('Logo JavaScrip')" onmouseout="cambia('Passa per avere più informazioni')"/>
+
+        <script>
+            // Funzione che mostra l'alert
+            function cambia(messaggio) {
+                document.getElementById("testo").innerHTML=messaggio
+            }
+
+            // Aggiunge l'evento al passaggio del mouse sull'immagine
+            var image = document.getElementById('myImage');
+            image.addEventListener('mouseover', showAlert);
+        </script>
+    </body>
+
+</html>

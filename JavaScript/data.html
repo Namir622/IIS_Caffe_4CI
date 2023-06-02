@@ -1,0 +1,58 @@
+<html lang="en">
+    <head>
+        <title>gestione onload</title>
+    </head>
+
+    <body onload="GiornoAttuale()">
+        <p id="testo">Oggi &igrave; il giorno </p>
+    </body>
+
+    <script type="text/javascript">
+        function GiornoAttuale()
+        {
+            var d = new Date()
+            var g,m
+
+            switch (d.getDay()) {
+                case 1:
+                    g="luned&igrave;"
+                    break;
+                case 2:
+                    g="marted&igrave;"
+                    break;
+
+                case 3:
+                    g="mercoled&igrave;"
+                    break;
+                case 4:
+                    g="gioved&igrave;"
+                    break;
+
+                case 5:
+                    g="venerd&igrave;"
+                    break;
+
+                case 6:
+                    g="sabato"
+                    break;
+
+                case 7:
+                    g="domenica"
+                    break;
+            
+            }//switch
+
+            document.getElementById("testo").innerHTML+=g
+            document.getElementById("testo").innerHTML+=" "
+            document.getElementById("testo").innerHTML+=d.getDate()
+            document.getElementById("testo").innerHTML+="/"
+
+            m=d.getMonth()+1
+
+            document.getElementById("testo").innerHTML+=m
+            document.getElementById("testo").innerHTML+="/"
+            document.getElementById("testo").innerHTML+=d.getFullYear()
+
+        }
+    </script>
+</html>
